@@ -1,0 +1,112 @@
+/* =========================
+   ESTÚDIO BEM VIVER
+   Atividade 1
+   ========================= */
+
+/* Configuração geral */
+body {
+    background-color: #f4f7fc;
+    padding-top: 80px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   CABEÇALHO FIXO
+   ========================= */
+
+#topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2f6f6d;
+    padding: 15px;
+    z-index: 100;
+}
+
+
+/* =========================
+   MENU HORIZONTAL
+   ========================= */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 16px;
+    color: white;
+}
+
+
+/* Efeito ao passar o mouse */
+.menu a:hover {
+    background-color: #245755;
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+/* =========================
+   ETIQUETA
+   ========================= */
+
+.etiqueta {
+    background-color: #e67e22;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* =========================
+   BOTÃO
+   ========================= */
+
+.botao {
+    background-color: blue;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: darkblue;
+}
+
+
+/* =========================
+   DESTAQUE / Z-INDEX
+   ========================= */
+
+.destaque {
+    position: relative;
+    z-index: 50;
+    background-color: yellow;
+}
