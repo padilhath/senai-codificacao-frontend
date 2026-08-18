@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: beige;
+    font-family: 'Almendra', serif;
+    margin: 0;
+    padding-top: 170px;
+    color: rgb(54, 26, 12);
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    padding: 10px 16px;
+}
+
+.grade {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #C0392B;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+#topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #014b00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 100;
+}
+
+.botao {
+    color: beige;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: darkred;
+}
+
+.botao:hover {
+    background-color: #ff0000;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: rgb(218, 218, 201);
+    padding: 50px 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+}
