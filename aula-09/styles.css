@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    background-color: #0B1020;
+    color: #F5F7FF;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "principal"
+        "rodape";
+    gap: 2em;
+    min-height: 100vh;
+}
+
+.area-header {
+    grid-area: header;
+    padding: 2em 2em 0 2em;
+    display: grid;
+    grid-template-columns: 1fr auto
+}
+
+.area-principal {
+    grid-area: principal;
+    padding: 1vh 1vw;
+}
+
+.area-rodape {
+    grid-area: rodape;
+}
+
+.menu {
+    display: flex;
+    gap: 5vw;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #21D4FD;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #6C63FF;
+}
+
+.grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2vw;
+}
+
+.card-servico {
+    background-color: #161D33;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.icone {
+    fill: #F5F7FF;
+    transition: 0.5s;
+}
+
+.card-servico:hover .icone {
+    fill: #21D4FD;
+    transform: scale(1.3);
+}
+
+.grade-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2em;
+}
+
+.item-portfolio {
+    aspect-ratio: 1 / 1;
+    background: #161D33;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.grade-passos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2em;
+}
+
+.grade-passos span {
+    color: #21D4FD;
+}
+
+.numero-passo {
+    font-size: 2rem;
+    color: #333;
+}
+
+.secao-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2em;
+}
+
+.sobre-info {
+    display: grid;
+    gap: 2em;
+}
+
+.area-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2vw;
+}
+
+.rodape-links {
+    display: flex;
+    gap: 2em;
+}
+
+.rodape-links a {
+    text-decoration: none;
+    color: #21D4FD;
+}
