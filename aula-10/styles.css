@@ -1,0 +1,106 @@
+/* === VARIÁVEIS === */
+:root {
+  /* Cores */
+  --cor-primaria: #0570b5;
+  --cor-secundaria: #e3f2fd;
+  --cor-texto: #333333;
+
+  /* Tipografia */
+  --fonte-principal: Arial, sans-serif;
+
+  /* Espaçamento */
+  --espacamento-padrao: 15px;
+
+  /* Bordas */
+  --raio-borda: 8px;
+}
+
+/* estilo.css inicial — a cor #0570b5 aparece REPETIDA de propósito.
+   Passo 1 da atividade: criem o :root e troquem tudo por var(). */
+
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BASE === */
+body {
+  font-family: var(--fonte-principal);
+  background-color: #f4f4f4;
+  color: var(--cor-texto);
+}
+
+/* === HEADER, etc ===*/
+.header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: var(--espacamento-padrao);
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: var(--espacamento-padrao);
+  list-style: none;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner {
+  background-color: var(--cor-secundaria);
+  padding: 20px;
+  margin: 10px;
+  border-radius: var(--raio-borda);
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacamento-padrao);
+  padding: 10px;
+}
+
+.product-card {
+  background-color: white;
+  padding: var(--espacamento-padrao);
+  border-radius: var(--raio-borda);
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--raio-borda);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: var(--espacamento-padrao);
+}
+
+/* === ANIMAÇÕES === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
